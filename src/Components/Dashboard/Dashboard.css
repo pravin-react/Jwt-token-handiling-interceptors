@@ -1,0 +1,51 @@
+
+.tit{
+    display: flex;
+}
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  tr, td {
+    padding: 10px 10px;
+    border: 1px solid #9c27b0;
+}
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;
+    font-family: "Caveat", cursive;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .getdata{
+    padding: 10px 20px;
+    background: #a2c9ea;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+  .logout{
+    padding: 10px 20px;
+    background: #d40f0f;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: #fff;
+  }
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
